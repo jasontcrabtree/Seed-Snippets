@@ -1,3 +1,14 @@
+/*
+- Fix aside-share on Firefox
+- Review colours for consistency / use variables
+- Clean out unused code
+- Organise / comment everything
+- Fix links for side-bar component navigation
+- Make Example / Contact Pages
+- Link docs link
+- Content everywhere
+*/
+
 :root {
 	--base-text-color: #140a2c;
 	--base-purple: #4c15ce;
@@ -16,6 +27,11 @@ html {
 	padding: 0;
 	scroll-behavior: auto;
 	/* background: var(--base-white); */
+}
+
+h2,
+h3 {
+	color: #5a526b;
 }
 
 /* Link styling */
@@ -61,24 +77,6 @@ h3 {
 	color: #5a526b;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	color: #5a526b;
-}
-
-.components-navigation-bar h3 {
-	font-size: 24px;
-}
-
-.small-wordmark {
-	font-weight: 900;
-	color: var(--base-purple);
-}
-
 /* Main content layout */
 main {
 	background: var(--base-white);
@@ -100,15 +98,7 @@ nav ul {
 /* Sections within Main Content */
 section {
 	margin: 88px 0;
-	padding: 24px;
-}
-
-.svg-icon {
-	margin-right: 8px;
-}
-
-.component-content {
-	margin-left: 32px;
+	padding: 24px 24px 48px 24px;
 }
 
 main section h3 {
@@ -117,6 +107,112 @@ main section h3 {
 
 aside ul {
 	padding-inline-start: 0;
+}
+
+nav ul li a {
+	font-weight: 500;
+}
+
+aside {
+	padding-inline-start: 0;
+	padding: 16px 32px 16px 16px;
+	margin-left: 42px;
+	border-radius: 4px;
+	grid-column: 8 / 10;
+}
+
+aside h4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+aside p {
+	font-size: 16px;
+}
+
+nav ul li .wordmark {
+	font-weight: 900;
+}
+
+/* Table Row */
+tr {
+	background-color: #efeff1;
+}
+
+/* Table Heading */
+th {
+	background: #fffbea;
+}
+
+table {
+	font-size: 18px;
+	color: #140a2c;
+	width: 100%;
+	line-height: 1.25;
+}
+
+pre {
+	overflow-x: auto;
+	white-space: pre-wrap;
+	white-space: -moz-pre-wrap;
+	white-space: -pre-wrap;
+	white-space: -o-pre-wrap;
+	word-wrap: break-word;
+	margin: 0;
+}
+
+code {
+	font-family: Hack, Menlo, Consolas, "DejaVu Sans Mono", monospace;
+	background: #041525;
+	padding: 48px;
+	font-size: 14px;
+	line-height: 1.3;
+	border-radius: 8px;
+	color: #ffffff;
+	border: 1px solid #dbdbdb;
+	display: block;
+}
+
+/* Table Data */
+td,
+th {
+	padding: 16px 16px 16px 16px;
+	border: 1px solid #dbdbdb;
+}
+
+/* Zebra Stripping */
+tr:nth-child(even) {
+	background-color: #ffffff;
+}
+
+table {
+	margin: 0px auto 0px 0px;
+	border-collapse: collapse;
+	text-align: left;
+}
+
+.section-main--hierarchy-line {
+	background: #d8e2ef;
+	height: 1px;
+	width: 80%;
+	margin: 64px auto 24px;
+}
+
+.components-navigation-bar h3 {
+	font-size: 24px;
+}
+
+.small-wordmark {
+	font-weight: 900;
+	color: var(--base-purple);
+}
+
+.svg-icon {
+	margin-right: 8px;
+}
+
+.component-content {
+	margin-left: 32px;
 }
 
 /* Main Page Nav */
@@ -129,6 +225,7 @@ aside ul {
 	margin-bottom: 16px;
 	border: 1px solid #d7e2f0;
 
+	/* box-shadow: 0px 4px 8px #dbdbdb; */
 	box-shadow: 0px 4px 8px #dbdbdb;
 	/* border-top: 2px solid #b79cf7; */
 	border-top: 8px solid #f0b429;
@@ -148,10 +245,6 @@ aside ul {
 	justify-content: space-around;
 	list-style-type: none;
 	padding: 8px 24px;
-}
-
-nav ul li a {
-	font-weight: 500;
 }
 
 .link1 {
@@ -183,7 +276,7 @@ nav ul li a {
 	background: #f5f7fa;
 	border-radius: 4px;
 	border: 1px solid #d7e2f0;
-	box-shadow: 0px 4px 8px #dbdbdb;
+	/* box-shadow: 0px 4px 8px #dbdbdb; */
 }
 
 .components-navigation-bar a:link {
@@ -208,17 +301,8 @@ nav ul li a {
 	font-size: 3rem;
 }
 
-/* Code-Block Styling */
-.code-block {
-	padding: 20px 50px;
-	border-radius: 4px;
-	font-size: 16px;
-	color: var(--base-purple);
-	background: var(--media-large);
-	border: 1px solid var(--light-teal);
-}
-
 /* Adding space below code block */
+/* red MIGHT BE ABLE to remove RED TODO */
 .content-unordered-list {
 	margin-top: 50px;
 	margin-left: 1.5rem;
@@ -230,13 +314,19 @@ nav ul li a {
 	margin-bottom: 30px;
 }
 
-.ul-intro-list {
+.ul-intro-list,
+.section-main--ul {
 	padding-left: 32px;
 	font-size: 18px;
 	line-height: 1.4;
 	color: #5a526b;
 	margin-top: -8px;
 	padding-top: 0;
+}
+
+.section-main--ul {
+	padding-left: 16px;
+	line-height: 1.7;
 }
 
 .authors-note {
@@ -276,12 +366,25 @@ nav ul li a {
 	margin-bottom: 0;
 }
 
-aside {
-	padding-inline-start: 0;
-	padding: 16px 32px 16px 16px;
-	margin-left: 42px;
+.code-snippet__button {
+}
+.code-snippet__button--right {
+	display: flex;
+
+	margin: 16px 0px 16px auto;
+	padding: 8px 16px;
+	background: #d7e2f0;
+	border: 1px solid #88aaf9;
+	color: #140a2c;
 	border-radius: 4px;
-	grid-column: 8 / 10;
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.code-ui-example__image {
+	width: 100%;
+	box-shadow: 0 12px 16px #dbdbdb;
+	border-radius: 16px;
 }
 
 .aside-share {
@@ -290,8 +393,8 @@ aside {
 	height: intrinsic; /* Safari/WebKit uses a non-standard name */
 	height: -moz-max-content; /* Firefox/Gecko */
 	height: -webkit-max-content; /* Chrome */
+	height: 208px;
 	padding: 0;
-	box-shadow: 0px 4px 8px #dbdbdb;
 }
 
 .aside-share p {
@@ -300,15 +403,9 @@ aside {
 
 .twitter-share {
 	width: fit-content;
-	/* margin: 0 auto 0 auto; */
 	padding: 0 16px 16px 0;
-	margin: 0 0 0 auto;
-	/* display: grid;
-	justify-content: flex-end;
-	align-items: flex-end;
-	justify-items: flex-end;
-	justify-content: flex-end; */
-	/* padding: 16px; */
+	margin: 0 0 auto auto;
+	height: 208px;
 }
 
 .aside-share h4 {
@@ -327,13 +424,16 @@ aside {
 	margin-bottom: 0;
 }
 
-aside h4 {
-	font-size: 18px;
-	font-weight: bold;
+.typography {
+	height: 320px;
+	overflow: scroll;
 }
 
-aside p {
-	font-size: 16px;
+.code––content--h3-title {
+	margin-top: 48px;
+	text-decoration: underline;
+	color: #5a526b;
+	font-size: 22px;
 }
 
 .aside-style-2 {
@@ -341,10 +441,6 @@ aside p {
 	height: 192px;
 	background: #fffbea;
 	border: 3px solid #fff3c4;
-}
-
-nav ul li .wordmark {
-	font-weight: 900;
 }
 
 /* Screens larger than 1440px */
@@ -363,7 +459,7 @@ nav ul li .wordmark {
 
 	section {
 		background: #f6f8fb;
-		/* box-shadow: 0px 4px 8px #dbdbdb; */
+		box-shadow: 0px 12px 16px #dbdbdb;
 		border: 1px solid #d7e2f0;
 	}
 
@@ -387,6 +483,94 @@ nav ul li .wordmark {
 		padding: 8px;
 	}
 }
+
+.content-paragraph {
+	margin-top: 0;
+}
+
+.content-title-margin {
+	margin-top: 48px;
+	margin-bottom: 24px;
+}
+
+.seed-h1 {
+	font-size: 32px;
+	font-weight: 700;
+}
+
+.seed-h2 {
+	font-size: 28px;
+	font-weight: 700;
+}
+
+.seed-h3 {
+	font-size: 26px;
+	font-weight: 700;
+}
+
+.seed-h4 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.seed-h5 {
+	font-size: 20px;
+	font-weight: 700;
+}
+
+.seed-h6 {
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.seed-rg-body {
+	font-size: 18px;
+}
+
+.seed-sm-body {
+	font-size: 16px;
+}
+
+.seed-label {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.section-main--group-component h6:not(table) {
+	margin: 0;
+	padding: 0;
+}
+
+/* E.g. h1 */
+.code-selector {
+	color: #acb2be;
+}
+
+/* E.g. color */
+.code-property {
+	color: #ffffff;
+}
+
+/* E.g 12px 0px 0px 0px */
+.code-value1 {
+	color: #93d8ca;
+}
+
+/* E.g. 0px 16px 0px 0px */
+.code-value2 {
+	color: #88aaf9;
+}
+
+/* E.g. 0px 0px 16px 0px */
+.code-value3 {
+	color: #e7c594;
+}
+
+/* E.g. 0px 0px 0px 16px */
+.code-value4 {
+	color: #ea9173;
+}
+
 /* Screens smaller than 1440px */
 @media screen and (max-width: 1430px) {
 	.top-level-navigation {
@@ -443,5 +627,23 @@ nav ul li .wordmark {
 
 	.divider-line {
 		margin: 32px 0;
+	}
+}
+
+@media screen and (max-width: 450px) {
+	/* table {
+		width: 100vw;
+		margin-left: 5%;
+		transform: translateX(-5%);
+	} */
+
+	/* Table Heading */
+	th {
+		padding: 16px 8px;
+	}
+
+	/* Table Data */
+	td {
+		padding: 16px 8px;
 	}
 }
