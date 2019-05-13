@@ -15,6 +15,32 @@
 		/>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/seed.css" />
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="assets/Favicon/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="assets/Favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="assets/Favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="assets/Favicon/site.webmanifest" />
+		<link
+			rel="mask-icon"
+			href="assets/Favicon/safari-pinned-tab.svg"
+			color="#33229c"
+		/>
+		<meta name="msapplication-TileColor" content="#33229c" />
+		<meta name="theme-color" content="#ffffff" />
 	</head>
 	<body>
 		<!--[if lt IE 7]>
@@ -23,6 +49,8 @@
 				<a href="#">upgrade your browser</a> to improve your experience.
 			</p>
 		<![endif]-->
+
+		<!-- Top of page navbar -->
 		<nav class="top-level-navigation">
 			<ul class="top-level-ul">
 				<li class="top-nav-list link1">
@@ -43,7 +71,8 @@
 		</nav>
 
 		<main id="main-doc" class="main-grid">
-			<nav class="components-navigation-bar" id="navbar">
+			<!-- Side Navigation -->
+			<nav class="components-navigation-bar nav-link" id="navbar">
 				<header>
 					<h3>Components</h3>
 				</header>
@@ -78,23 +107,18 @@
 				</ul>
 			</nav>
 
+			<!-- Intro paragraph -->
 			<header class="page-introduction-header">
-				<h1 class="hero-title">Getting Started</h1>
+				<h1 class="hero-title">Introducing Seed</h1>
 				<p>
 					Seed is a collection of small, useful HTML and CSS code snippets. Each
-					snippet provides default styles, design and opinions to get you
-					started while priorisiting giving you the chance to reuse, repurpose
-					and customise everything you need.
+					snippet starts with default styles and design opinions while
+					priorisiting giving you the chance to reuse, repurpose and customise
+					everything you need.
 				</p>
 				<p>
-					Seed's main goal is providing defaults that help you get started,
-					letting you build new projects, products and features as easily as
-					possible.
-				</p>
-				<p
-					>Each snippet is simple, small and self-contained. The intention is
-					that you can copy and paste whatever you choose, letting you use
-					exactly what you need.
+					Seed's helps you start simple projects as easily as possible. Just
+					copy and paste whatever you need, changing things as you go.
 				</p>
 				<p>
 					Ready to get started? Just scroll on down. Time to build something
@@ -126,6 +150,7 @@
 				</div>
 			</header>
 
+			<!-- Twitter share card -->
 			<aside class="aside-share">
 				<h4>Like what you see?</h4>
 				<p
@@ -155,14 +180,129 @@
 			<article class="main-content-article">
 				<div class="divider-line"></div>
 
-				<h2>
+				<h2 id="section1">
 					Using Seed: Documentation
 				</h2>
 
-				<section class="section-main--group-component">
+				<section class="section-main--group-component main-section">
 					<header class="main-header-section">
-						<h3 id="section1">Getting Started</h3>
+						<a href="/#section1">
+							<h3>
+								<img
+									class="svg-icon"
+									src="/assets/link.svg"
+									alt="Link Icon"
+								/>Getting Started
+							</h3>
+						</a>
 					</header>
+					<h6 class="seed-h6">Subtitle:</h6>
+					<p class="content-paragraph">
+						Paragraph 1
+					</p>
+					<p class="content-paragraph">
+						Paragraph 2
+					</p>
+					<h2 class="content-title-margin">Using Seed</h2>
+					<table>
+						<tr>
+							<th>Heading 1</th>
+							<th>Heading 2</th>
+							<th>Heading 3</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+					</table>
+
+					<!-- <table>
+						<tr>
+							<th class="seed-label">HTML</th>
+							<th class="seed-label">Example</th>
+							<th class="seed-label">Pixels</th>
+						</tr>
+						<tr>
+							<td>H1</td>
+							<td class="seed-h1">Major Second Type Scale</td>
+							<td>32px</td>
+						</tr>
+						<tr>
+							<td>H2</td>
+							<td class="seed-h2">Major Second Type Scale</td>
+							<td>28px</td>
+						</tr>
+						<tr>
+							<td>H3</td>
+							<td class="seed-h3">Major Second Type Scale</td>
+							<td>26px</td>
+						</tr>
+						<tr>
+							<td>H4</td>
+							<td class="seed-h4">Major Second Type Scale</td>
+							<td>22px</td>
+						</tr>
+						<tr>
+							<td>H5</td>
+							<td class="seed-h5">Major Second Type Scale</td>
+							<td>20px</td>
+						</tr>
+						<tr>
+							<td>H6</td>
+							<td class="seed-h6">Major Second Type Scale</td>
+							<td>16px</td>
+						</tr>
+						<tr>
+							<td>Rg-Body</td>
+							<td class="seed-rg-body">Major Second Type Scale</td>
+							<td>18px</td>
+						</tr>
+						<tr>
+							<td>Sm-Body</td>
+							<td class="seed-sm-body">Major Second Type Scale</td>
+							<td>16px</td>
+						</tr>
+						<tr>
+							<td>Label</td>
+							<td class="seed-label">Major Second Type Scale</td>
+							<td>18px</td>
+						</tr>
+					</table> -->
+
+					<h2 class="content-title-margin">CSS Snippet</h2>
+					<!-- <h3>CSS</h3> -->
+					<!-- <button
+						class="
+						code-snippet__button code-snippet__button--right"
+						onclick="copyStringToClipboard()"
+					>
+						Copy Snippet</button
+					> -->
+					<pre><code class="code-block--scroll-height">
+						<span class="code-selector"></span>html {
+	color: #010101
+}</code>
+					</pre>
+
+					<h2 class="content-title-margin">Code in Use: UI Example</h2>
+					<p class="authors-note">UI example built in code coming soon!</p>
+					<img
+						class="code-ui-example__image"
+						src="/assets/"
+						alt="An image of the font sizes used for a to-do list app"
+					/>
+					<div class="section-main--hierarchy-line"></div>
 					<!-- <p class="content-paragraph">Para 1</p>
 					<p class="content-paragraph">Para 2</p>
 					<code class="code-block">HTML || CSS || JS</code>
@@ -175,9 +315,9 @@
 
 				<div class="divider-line" id="section2"></div>
 
-				<section class="section-main--group-component">
+				<section class="section-main--group-component main-section">
 					<header class="main-header-section">
-						<a href="#section2">
+						<a href="/#section2">
 							<h3>
 								<img
 									class="svg-icon"
@@ -187,21 +327,271 @@
 							</h3>
 						</a>
 					</header>
+					<h6 class="seed-h6">Subtitle:</h6>
+					<p class="content-paragraph">
+						Paragraph 1
+					</p>
+					<p class="content-paragraph">
+						Paragraph 2
+					</p>
+					<h2 class="content-title-margin">Layout Examples:</h2>
+					<p
+						>These examples apply top and bottom margin, however the layout
+						variables can be used for margin, padding or whatever else is
+						needed.</p
+					>
+					<table class="section__layout--font section__layout--text-align">
+						<tr>
+							<th>Variable</th>
+							<th>Example</th>
+							<th>Pixels</th>
+						</tr>
+						<tr>
+							<td>--layout-0px</td>
+							<td>N/A</td>
+							<td>0px</td>
+						</tr>
+						<tr>
+							<td>--layout-8px</td>
+							<td>
+								<div class="layout-example layout-example-8px"
+									>Margin: 8px auto</div
+								>
+							</td>
+							<td>8px</td>
+						</tr>
+						<tr>
+							<td>--layout-16px</td>
+							<td>
+								<div class="layout-example layout-example-16px"
+									>Margin: 16px auto</div
+								>
+							</td>
+							<td>16px</td>
+						</tr>
+						<tr>
+							<td>--layout-24px</td>
+							<td>
+								<div class="layout-example layout-example-24px"
+									>Margin: 24px auto</div
+								>
+							</td>
+							<td>24px</td>
+						</tr>
+						<tr>
+							<td>--layout-32px</td>
+							<td>
+								<div class="layout-example layout-example-32px"
+									>Margin: 32px auto</div
+								>
+							</td>
+							<td>32px</td>
+						</tr>
+						<tr>
+							<td>--layout-48px</td>
+							<td>
+								<div class="layout-example layout-example-48px"
+									>Margin: 48px auto</div
+								>
+							</td>
+							<td>48px</td>
+						</tr>
+						<tr>
+							<td>--layout-72px</td>
+							<td>
+								<div class="layout-example layout-example-72px"
+									>Margin: 72px auto</div
+								>
+							</td>
+							<td>72px</td>
+						</tr>
+						<tr>
+							<td>--layout-288px</td>
+							<td>
+								<div>N/A</div>
+							</td>
+							<td>288px</td>
+						</tr>
+						<tr>
+							<td>--layout-auto</td>
+							<td>
+								<div class="layout-example layout-example-auto"
+									>Margin: auto auto</div
+								>
+							</td>
+							<td>auto</td>
+						</tr>
+					</table>
+
+					<h2 class="content-title-margin">CSS Snippet</h2>
+					<pre><code class="code-block--scroll-height"><span class="code-selector">:</span><span class="code-value2">root</span> {
+<span class="code-value2">--layout-0px:</span>	<span class="code-value4">0</span>;
+<span class="code-value2">--layout-8px:</span>	<span class="code-value4">8px</span>;
+<span class="code-value2">--layout-16px:</span>	<span class="code-value4">16px</span>;
+<span class="code-value2">--layout-24px:</span>	<span class="code-value4">24px</span>;
+<span class="code-value2">--layout-48px:</span>	<span class="code-value4">48px</span>;
+<span class="code-value2">--layout-72px:</span>	<span class="code-value4">72px</span>;
+<span class="code-value2">--layout-288px:</span>	<span class="code-value4">288px</span>;
+<span class="code-value2">--layout-auto:</span>	<span class="code-value4">auto</span>;
+}</code>
+					</pre>
+
+					<h2 class="content-title-margin">Code in Use: UI Example</h2>
+					<p class="authors-note">UI example built in code coming soon!</p>
+					<img
+						class="code-ui-example__image"
+						src="/assets/"
+						alt="An image of the font sizes used for a to-do list app"
+					/>
+					<div class="section-main--hierarchy-line"></div>
+					<!-- <p class="content-paragraph">Para 1</p>
+					<p class="content-paragraph">Para 2</p>
+					<code class="code-block">HTML || CSS || JS</code>
+					<ul class="content-unordered-list">
+						<li class="content-list-item">List item 1</li>
+						<li class="content-list-item">List item 2</li>
+						<li class="content-list-item">List item 3</li>
+					</ul> -->
 				</section>
 
-				<div class="divider-line"></div>
+				<!-- <div class="divider-line" id="section3"></div> -->
 
-				<section class="section-main--group-component">
+				<!-- <section class="section-main--group-component main-section">
 					<header class="main-header-section">
-						<h3 id="section3">Navigation</h3>
+						<a href="/#section3">
+							<h3>
+								<img
+									class="svg-icon"
+									src="/assets/link.svg"
+									alt="Link Icon"
+								/>Navigation
+							</h3>
+						</a>
 					</header>
-				</section>
+					<h6 class="seed-h6">Subtitle:</h6>
+					<p class="content-paragraph">
+						Paragraph 1
+					</p>
+					<p class="content-paragraph">
+						Paragraph 2
+					</p>
+					<h2 class="content-title-margin">Using Seed</h2>
+					<table>
+						<tr>
+							<th>Heading 1</th>
+							<th>Heading 2</th>
+							<th>Heading 3</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+					</table>
 
-				<div class="divider-line"></div>
+					<!-- <table>
+						<tr>
+							<th class="seed-label">HTML</th>
+							<th class="seed-label">Example</th>
+							<th class="seed-label">Pixels</th>
+						</tr>
+						<tr>
+							<td>H1</td>
+							<td class="seed-h1">Major Second Type Scale</td>
+							<td>32px</td>
+						</tr>
+						<tr>
+							<td>H2</td>
+							<td class="seed-h2">Major Second Type Scale</td>
+							<td>28px</td>
+						</tr>
+						<tr>
+							<td>H3</td>
+							<td class="seed-h3">Major Second Type Scale</td>
+							<td>26px</td>
+						</tr>
+						<tr>
+							<td>H4</td>
+							<td class="seed-h4">Major Second Type Scale</td>
+							<td>22px</td>
+						</tr>
+						<tr>
+							<td>H5</td>
+							<td class="seed-h5">Major Second Type Scale</td>
+							<td>20px</td>
+						</tr>
+						<tr>
+							<td>H6</td>
+							<td class="seed-h6">Major Second Type Scale</td>
+							<td>16px</td>
+						</tr>
+						<tr>
+							<td>Rg-Body</td>
+							<td class="seed-rg-body">Major Second Type Scale</td>
+							<td>18px</td>
+						</tr>
+						<tr>
+							<td>Sm-Body</td>
+							<td class="seed-sm-body">Major Second Type Scale</td>
+							<td>16px</td>
+						</tr>
+						<tr>
+							<td>Label</td>
+							<td class="seed-label">Major Second Type Scale</td>
+							<td>18px</td>
+						</tr>
+					</table> -->
 
-				<section class="section-main--group-component">
+				<!-- <h2 class="content-title-margin">CSS Snippet</h2> -->
+				<!-- <h3>CSS</h3> -->
+				<!-- <button
+						class="
+						code-snippet__button code-snippet__button--right"
+						onclick="copyStringToClipboard()"
+					>
+						Copy Snippet</button
+					> -->
+
+				<!--
+					<pre><code class="code-block--scroll-height"><span class="code-selector">html {
+	color: #010101
+}</code>
+					</pre>
+
+					<h2 class="content-title-margin">Code in Use: UI Example</h2>
+					<p class="authors-note">UI example built in code coming soon!</p>
+					<img
+						class="code-ui-example__image"
+						src="/assets/"
+						alt="An image of the font sizes used for a to-do list app"
+					/>
+					<div class="section-main--hierarchy-line"></div>
+
+				</section> -->
+
+				<div class="divider-line" id="section4"></div>
+
+				<section class="section-main--group-component main-section">
 					<header class="main-header-section">
-						<h3 id="section4">Typography</h3>
+						<a href="/#section4">
+							<h3>
+								<img
+									class="svg-icon"
+									src="/assets/link.svg"
+									alt="Link Icon"
+								/>Typography
+							</h3>
+						</a>
 					</header>
 					<h6 class="seed-h6">Type Scale:</h6>
 					<p class="content-paragraph">
@@ -288,7 +678,7 @@
 					>
 						Copy Snippet</button
 					> -->
-					<pre><code class="typography"><span class="code-selector">html</span> {
+					<pre><code class="code-block--scroll-height"><span class="code-selector">html</span> {
 	<span class="code-property">font-family:</span> <span class="code-value1">-apple-</span><span class="code-value2">system, BlinkMacSystemFont,</span><span class="code-value3"> "Segoe UI"</span>, <span class="code-value2">Roboto, Helvetica, Arial</span>, <span class="code-value4">sans-serif, </span><span class="code-value3">"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"</span>;
 }
 
@@ -340,24 +730,492 @@
 					<div class="section-main--hierarchy-line"></div>
 				</section>
 
-				<div class="divider-line"></div>
+				<div class="divider-line" id="section5"></div>
 
-				<section class="section-main--group-component">
+				<section class="section-main--group-component main-section">
 					<header class="main-header-section">
-						<h3 id="section5">Colours</h3>
+						<a href="/#section5">
+							<h3>
+								<img
+									class="svg-icon"
+									src="/assets/link.svg"
+									alt="Link Icon"
+								/>Colours
+							</h3>
+						</a>
 					</header>
+					<h6 class="seed-h6">Subtitle:</h6>
+					<p class="content-paragraph">
+						Paragraph 1
+					</p>
+					<p class="content-paragraph">
+						Paragraph 2
+					</p>
+					<h2 class="content-title-margin">Using Seed</h2>
+					<table>
+						<tr>
+							<th>Variable</th>
+							<th>Example</th>
+							<th>Hex</th>
+						</tr>
+						<tr>
+							<td>--primary-blue-700</td>
+							<td class="table__colours--example">
+								<div class="table__colours--primary-blue-700"> </div>
+							</td>
+							<td>#061342</td>
+						</tr>
+						<tr>
+							<td>--primary-blue-600</td>
+							<td class="table__colours--example">
+								<div class="table__colours--primary-blue-600"></div>
+							</td>
+							<td>#0c247b</td>
+						</tr>
+						<tr>
+							<td>--primary-blue-500</td>
+							<td class="table__colours--example">
+								<div class="table__colours--primary-blue-500"></div>
+							</td>
+							<td>#102fa0</td>
+						</tr>
+						<tr>
+							<td>--primary-blue-400</td>
+							<td class="table__colours--example">
+								<div class="table__colours--primary-blue-400"></div>
+							</td>
+							<td>#6579c2</td>
+						</tr>
+						<tr>
+							<td>--primary-blue-300</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--primary-blue-300 table__colours--cell-border"
+								></div>
+							</td>
+							<td>#b4bee1</td>
+						</tr>
+						<tr>
+							<td>--primary-blue-200</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--primary-blue-200 table__colours--cell-border"
+								></div>
+							</td>
+							<td>#d0d6ec</td>
+						</tr>
+						<tr>
+							<td>--primary-blue-100</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--primary-blue-100 table__colours--cell-border"
+								></div>
+							</td>
+							<td>#e9ecf6</td>
+						</tr>
+						<!-- Faded Divider Row -->
+						<tr class="table__empty-row--faded">
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>--neutral-grey-700</td>
+							<td class="table__colours--example">
+								<div class="table__colours--neutral-grey-700"> </div>
+							</td>
+							<td>#191b20</td>
+						</tr>
+						<tr>
+							<td>--neutral-grey-600</td>
+							<td class="table__colours--example">
+								<div class="table__colours--neutral-grey-600"> </div>
+							</td>
+							<td>#676b7a</td>
+						</tr>
+						<tr>
+							<td>--neutral-grey-500</td>
+							<td class="table__colours--example">
+								<div class="table__colours--neutral-grey-500"> </div>
+							</td>
+							<td>#858894</td>
+						</tr>
+						<tr>
+							<td>--neutral-grey-400</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--neutral-grey-400 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#b0b2ba</td>
+						</tr>
+						<tr>
+							<td>--neutral-grey-300</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--neutral-grey-300 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#d1d2d7</td>
+						</tr>
+						<tr>
+							<td>--neutral-grey-200</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--neutral-grey-200 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#ecedef</td>
+						</tr>
+						<tr>
+							<td>--neutral-grey-100</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--neutral-grey-100 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#f9f9f9</td>
+						</tr>
+						<!-- Faded Divider Row -->
+						<tr class="table__empty-row--faded">
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>--support-red-600</td>
+							<td class="table__colours--example">
+								<div class="table__colours--support-red-600"> </div>
+							</td>
+							<td>#670a1e</td>
+						</tr>
+						<tr>
+							<td>--support-red-400</td>
+							<td class="table__colours--example">
+								<div class="table__colours--support-red-400"> </div>
+							</td>
+							<td>#a0102f</td>
+						</tr>
+						<tr>
+							<td>--support-red-200</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--support-red-200 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#f6eaec</td>
+						</tr>
+						<!-- Faded Divider Row -->
+						<tr class="table__empty-row--faded">
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>--support-green-600</td>
+							<td class="table__colours--example">
+								<div class="table__colours--support-green-600"> </div>
+							</td>
+							<td>#0c7e2d</td>
+						</tr>
+						<tr>
+							<td>--support-green-400</td>
+							<td class="table__colours--example">
+								<div class="table__colours--support-green-400"> </div>
+							</td>
+							<td>#10a039</td>
+						</tr>
+						<tr>
+							<td>--support-green-200</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--support-green-200 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#c7e9d1</td>
+						</tr>
+						<!-- Faded Divider Row -->
+						<tr class="table__empty-row--faded">
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>--support-yellow-600</td>
+							<td class="table__colours--example">
+								<div class="table__colours--support-yellow-600"> </div>
+							</td>
+							<td>#f0b429</td>
+						</tr>
+						<tr>
+							<td>--support-yellow-400</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--support-yellow-400 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#fff3c4</td>
+						</tr>
+						<tr>
+							<td>--support-yellow-200</td>
+							<td class="table__colours--example">
+								<div
+									class="table__colours--support-yellow-200 table__colours--cell-border"
+								>
+								</div>
+							</td>
+							<td>#fffbea</td>
+						</tr>
+					</table>
+
+					<h2 class="content-title-margin">CSS Snippet</h2>
+					<!-- <h3>CSS</h3> -->
+					<!-- <button
+						class="
+						code-snippet__button code-snippet__button--right"
+						onclick="copyStringToClipboard()"
+					>
+						Copy Snippet</button
+					> -->
+					<pre><code class="code-block--scroll-height"><span class="code-selector">:root {</span>
+<span class="code-value2">--primary-blue-700:</span> <span class="code-value4">#061342;</span>
+<span class="code-value2">--primary-blue-600:</span> <span class="code-value4">#0c247b;</span>
+<span class="code-value2">--primary-blue-500:</span> <span class="code-value4">#102fa0;</span>
+<span class="code-value2">--primary-blue-400:</span> <span class="code-value4">#6579c2;</span>
+<span class="code-value2">--primary-blue-300:</span> <span class="code-value4">#b4bee1;</span>
+<span class="code-value2">--primary-blue-200:</span> <span class="code-value4">#d0d6ec;</span>
+<span class="code-value2">--primary-blue-100:</span> <span class="code-value4">#e9ecf6;</span>
+
+<span class="code-value2">--neutral-grey-700:</span> <span class="code-value4">#191b20;</span>
+<span class="code-value2">--neutral-grey-600:</span> <span class="code-value4">#676b7a;</span>
+<span class="code-value2">--neutral-grey-500:</span> <span class="code-value4">#858894;</span>
+<span class="code-value2">--neutral-grey-400:</span> <span class="code-value4">#b0b2ba;</span>
+<span class="code-value2">--neutral-grey-300:</span> <span class="code-value4">#d1d2d7;</span>
+<span class="code-value2">--neutral-grey-200:</span> <span class="code-value4">#ecedef;</span>
+<span class="code-value2">--neutral-grey-100:</span> <span class="code-value4">#f9f9f9;</span>
+
+<span class="code-value2">--support-red-600:</span> <span class="code-value4">#670a1e;</span>
+<span class="code-value2">--support-red-400:</span> <span class="code-value4">#a0102f;</span>
+<span class="code-value2">--support-red-200:</span> <span class="code-value4">#f6eaec;</span>
+
+<span class="code-value2">--support-green-600:</span> <span class="code-value4">#0a6825;</span>
+<span class="code-value2">--support-green-400:</span> <span class="code-value4">#0e9033;</span>
+<span class="code-value2">--support-green-200:</span> <span class="code-value4">#c7e9d1;</span>
+
+<span class="code-value2">--support-yellow-600:</span> <span class="code-value4">#f0b429;</span>
+<span class="code-value2">--support-yellow-400:</span> <span class="code-value4">#fff3c4;</span>
+<span class="code-value2">--support-yellow-200:</span> <span class="code-value4">#fffbea;</span>
+}</code>
+					</pre>
+
+					<h2 class="content-title-margin">Code in Use: UI Example</h2>
+					<p class="authors-note">UI example built in code coming soon!</p>
+					<img
+						class="code-ui-example__image"
+						src="/assets/"
+						alt="An image of the font sizes used for a to-do list app"
+					/>
+					<div class="section-main--hierarchy-line"></div>
+					<!-- <p class="content-paragraph">Para 1</p>
+					<p class="content-paragraph">Para 2</p>
+					<code class="code-block">HTML || CSS || JS</code>
+					<ul class="content-unordered-list">
+						<li class="content-list-item">List item 1</li>
+						<li class="content-list-item">List item 2</li>
+						<li class="content-list-item">List item 3</li>
+					</ul> -->
 				</section>
 
-				<div class="divider-line"></div>
+				<div class="divider-line" id="section6"></div>
 
-				<section class="section-main--group-component">
+				<section class="section-main--group-component main-section">
 					<header class="main-header-section">
-						<h3 id="section5">Buttons</h3>
+						<a href="/#section6">
+							<h3>
+								<img
+									class="svg-icon"
+									src="/assets/link.svg"
+									alt="Link Icon"
+								/>Buttons
+							</h3>
+						</a>
 					</header>
+					<h6 class="seed-h6">Subtitle:</h6>
+					<p class="content-paragraph">
+						Paragraph 1
+					</p>
+					<p class="content-paragraph">
+						Paragraph 2
+					</p>
+					<h2 class="content-title-margin">Using Seed</h2>
+					<table class="section__layout--text-align">
+						<tr>
+							<th>Class Name</th>
+							<th>Example</th>
+							<th>Heading 3</th>
+						</tr>
+						<tr>
+							<td>.button</td>
+							<td>
+								<button class="button">
+									Button
+								</button>
+							</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>.button-sm</td>
+							<!-- <td>
+								<input type="button button-sm" value="Button" class="button" />
+							</td> -->
+							<td>
+								<button class="button button--sm">Button</button>
+							</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>.button-rg</td>
+							<td>
+								<a href="/#" class="button button--rg" id="page-link">
+									Button
+								</a>
+							</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>.button-lg</td>
+							<td>
+								<button class="button button--lg">
+									Button
+								</button>
+							</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>.button--confirm</td>
+							<td>
+								<button class="button button--confirm">
+									Button
+								</button>
+							</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>.button--neutral</td>
+							<td>
+								<button class="button button--neutral">
+									Button
+								</button>
+							</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>.button--delete</td>
+							<td>
+								<button class="button button--delete">
+									Button
+								</button>
+							</td>
+							<td>3</td>
+						</tr>
+					</table>
+
+					<!-- <table>
+						<tr>
+							<th class="seed-label">HTML</th>
+							<th class="seed-label">Example</th>
+							<th class="seed-label">Pixels</th>
+						</tr>
+						<tr>
+							<td>H1</td>
+							<td class="seed-h1">Major Second Type Scale</td>
+							<td>32px</td>
+						</tr>
+						<tr>
+							<td>H2</td>
+							<td class="seed-h2">Major Second Type Scale</td>
+							<td>28px</td>
+						</tr>
+						<tr>
+							<td>H3</td>
+							<td class="seed-h3">Major Second Type Scale</td>
+							<td>26px</td>
+						</tr>
+						<tr>
+							<td>H4</td>
+							<td class="seed-h4">Major Second Type Scale</td>
+							<td>22px</td>
+						</tr>
+						<tr>
+							<td>H5</td>
+							<td class="seed-h5">Major Second Type Scale</td>
+							<td>20px</td>
+						</tr>
+						<tr>
+							<td>H6</td>
+							<td class="seed-h6">Major Second Type Scale</td>
+							<td>16px</td>
+						</tr>
+						<tr>
+							<td>Rg-Body</td>
+							<td class="seed-rg-body">Major Second Type Scale</td>
+							<td>18px</td>
+						</tr>
+						<tr>
+							<td>Sm-Body</td>
+							<td class="seed-sm-body">Major Second Type Scale</td>
+							<td>16px</td>
+						</tr>
+						<tr>
+							<td>Label</td>
+							<td class="seed-label">Major Second Type Scale</td>
+							<td>18px</td>
+						</tr>
+					</table> -->
+
+					<h2 class="content-title-margin">CSS Snippet</h2>
+					<!-- <h3>CSS</h3> -->
+					<!-- <button
+						class="
+						code-snippet__button code-snippet__button--right"
+						onclick="copyStringToClipboard()"
+					>
+						Copy Snippet</button
+					> -->
+					<pre><code class="code-block--scroll-height"><span class="code-selector">html {</span>
+	color: #010101
+}</code>
+					</pre>
+
+					<h2 class="content-title-margin">Code in Use: UI Example</h2>
+					<p class="authors-note">UI example built in code coming soon!</p>
+					<img
+						class="code-ui-example__image"
+						src="/assets/"
+						alt="An image of the font sizes used for a to-do list app"
+					/>
+					<div class="section-main--hierarchy-line"></div>
+					<!-- <p class="content-paragraph">Para 1</p>
+					<p class="content-paragraph">Para 2</p>
+					<code class="code-block">HTML || CSS || JS</code>
+					<ul class="content-unordered-list">
+						<li class="content-list-item">List item 1</li>
+						<li class="content-list-item">List item 2</li>
+						<li class="content-list-item">List item 3</li>
+					</ul> -->
 				</section>
 
-				<section>
-					<h3>Credits, Resources and Tools Used:</h3>
+				<section id="credit" class="main-section">
+					<header>
+						<h3>Credits, Resources and Tools Used:</h3>
+					</header>
 
 					<p></p>
 					<ul class="section-main--ul">
@@ -395,7 +1253,25 @@
 			</article>
 		</main>
 
+		<footer>
+			<p>
+				This page was designed and built by
+				<a href="https://jasontcrabtree.com/">@jasontcrabtree</a> for the
+				FreeCodeCamp Responsive Web Design
+				<a
+					href="https://learn.freecodecamp.org/responsive-web-design/responsive-web-design-projects/"
+				>
+					Certificate
+				</a>
+				.
+			</p>
+			<p>
+				Hosted on <a href="https://www.netlify.com/">Netlify</a>. See the code
+				on <a href="https://github.com/jasontcrabtree/Seed-Snippets">Github</a>
+			</p>
+		</footer>
+
 		<script async defer src="script.js"></script>
-		<!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+		<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 	</body>
 </html>

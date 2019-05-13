@@ -1,0 +1,138 @@
+:root {
+	/* Base Typography Setting */
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	color: var(--neutral-grey-700);
+
+	/* Layout Variables */
+	--layout-0px: 0;
+	--layout-8px: 8px;
+	--layout-16px: 16px;
+	--layout-24px: 24px;
+	--layout-32px: 32px;
+	--layout-48px: 48px;
+	--layout-72px: 72px;
+	--layout-288px: 288px;
+	--layout-auto: auto;
+
+	/* Primary Colours: Blue */
+	--primary-blue-700: #061342;
+	--primary-blue-600: #0c247b;
+	--primary-blue-500: #102fa0;
+	--primary-blue-400: #6579c2;
+	--primary-blue-300: #b4bee1;
+	--primary-blue-200: #d0d6ec;
+	--primary-blue-100: #e9ecf6;
+
+	/* Neutral Colours: Grey */
+	--neutral-grey-700: #191b20;
+	--neutral-grey-600: #676b7a;
+	--neutral-grey-500: #858894;
+	--neutral-grey-400: #b0b2ba;
+	--neutral-grey-300: #d1d2d7;
+	--neutral-grey-200: #ecedef;
+	--neutral-grey-100: #f9f9f9;
+
+	/* Supporting Colours: Red/Green/Yellow */
+	--support-red-600: #ab091e;
+	--support-red-400: #cf1124;
+	--support-red-200: #ffe3e3;
+
+	--support-green-600: #0c7e2d;
+	--support-green-400: #10a039;
+	--support-green-200: #c7e9d1;
+
+	--support-yellow-600: #f0b429;
+	--support-yellow-400: #fff3c4;
+	--support-yellow-200: #fffbea;
+}
+
+/* Typography Styles */
+.seed-h1 {
+	font-size: 32px;
+	font-weight: 700;
+}
+.seed-h2 {
+	font-size: 28px;
+	font-weight: 700;
+}
+.seed-h3 {
+	font-size: 26px;
+	font-weight: 700;
+}
+.seed-h4 {
+	font-size: 22px;
+	font-weight: 700;
+}
+.seed-h5 {
+	font-size: 20px;
+	font-weight: 700;
+}
+.seed-h6 {
+	font-size: 18px;
+	font-weight: 700;
+}
+.seed-rg-body {
+	font-size: 18px;
+}
+.seed-sm-body {
+	font-size: 16px;
+}
+.seed-label {
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.button {
+	color: var(--neutral-grey-100);
+	background: var(--primary-blue-500);
+
+	border: 1px solid inherit;
+	border-radius: 40px;
+
+	box-shadow: 0px 4px 4px var(--neutral-grey-500);
+
+	display: inline-block;
+
+	margin: var(--layout-8px) auto;
+	padding: var(--layout-8px) var(--layout-24px);
+
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1;
+
+	text-align: center;
+
+	cursor: pointer;
+}
+
+.button--sm {
+	padding: var(--layout-8px) var(--layout-16px);
+}
+
+.button--rg {
+	padding: var(--layout-16px) var(--layout-48px);
+}
+
+.button--lg {
+	padding: var(--layout-16px) var(--layout-72px);
+}
+
+.button--confirm {
+	background: var(--support-green-600);
+	color: var(--neutral-grey-100);
+}
+
+.button--neutral {
+	background: var(--neutral-grey-200);
+	border: 1px solid var(--neutral-grey-300);
+	color: var(--neutral-grey-700);
+}
+
+.button--delete {
+	background: var(--neutral-grey-100);
+	color: var(--neutral-grey-700);
+	border: 1px solid var(--support-red-400);
+}
