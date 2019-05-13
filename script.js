@@ -1,3 +1,4 @@
+// Code for the scroll to select active area enhancement
 (function() {
 	"use strict";
 

@@ -4,6 +4,7 @@
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	color: var(--neutral-grey-700);
 
+	/* --- LAYOUT --- */
 	/* Layout Variables */
 	--layout-0px: 0;
 	--layout-8px: 8px;
@@ -15,6 +16,7 @@
 	--layout-288px: 288px;
 	--layout-auto: auto;
 
+	/* --- COLOURS --- */
 	/* Primary Colours: Blue */
 	--primary-blue-700: #061342;
 	--primary-blue-600: #0c247b;
@@ -47,6 +49,7 @@
 	--support-yellow-200: #fffbea;
 }
 
+/* --- TYPOGRAPHY --- */
 /* Typography Styles */
 .seed-h1 {
 	font-size: 32px;
@@ -83,6 +86,7 @@
 	font-weight: 500;
 }
 
+/* --- BUTTONS --- */
 .button {
 	color: var(--neutral-grey-100);
 	background: var(--primary-blue-500);
